@@ -17,9 +17,9 @@
  */
 function main() 
 {
-	var editor   = editors.activeEditor,
-		start_ix = editor.getOffsetAtLine(editor.getLineAtOffset(editor.selectionRange.startingOffset)),
-		end_ix   = editor.getOffsetAtLine(editor.getLineAtOffset(editor.selectionRange.endingOffset) + 1),
+    var editor   = editors.activeEditor,
+        start_ix = editor.getOffsetAtLine(editor.getLineAtOffset(editor.selectionRange.startingOffset)),
+        end_ix   = editor.getOffsetAtLine(editor.getLineAtOffset(editor.selectionRange.endingOffset) + 1),
         text     = editor.source.substring(start_ix, end_ix),
         maxLen   = 0,
         output   = [];
